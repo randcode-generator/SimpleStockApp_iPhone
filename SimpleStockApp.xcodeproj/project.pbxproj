@@ -14,6 +14,7 @@
 		0705FD761A2D5A5F00C4D474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0705FD751A2D5A5F00C4D474 /* Images.xcassets */; };
 		0705FD791A2D5A5F00C4D474 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0705FD771A2D5A5F00C4D474 /* LaunchScreen.xib */; };
 		0705FD851A2D5A5F00C4D474 /* SimpleStockAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705FD841A2D5A5F00C4D474 /* SimpleStockAppTests.m */; };
+		07FB903A1A2D5BA000EA5340 /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB90381A2D5BA000EA5340 /* SIOSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		0705FD7E1A2D5A5F00C4D474 /* SimpleStockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0705FD831A2D5A5F00C4D474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0705FD841A2D5A5F00C4D474 /* SimpleStockAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleStockAppTests.m; sourceTree = "<group>"; };
+		07FB90371A2D5BA000EA5340 /* SIOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIOSocket.h; path = SIOSocket/SIOSocket.h; sourceTree = "<group>"; };
+		07FB90381A2D5BA000EA5340 /* SIOSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIOSocket.m; path = SIOSocket/SIOSocket.m; sourceTree = "<group>"; };
+		07FB90391A2D5BA000EA5340 /* socket.io.js.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socket.io.js.h; path = SIOSocket/socket.io.js.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		0705FD5C1A2D5A5F00C4D474 = {
 			isa = PBXGroup;
 			children = (
+				07FB903B1A2D5BA700EA5340 /* SIOSocket */,
 				0705FD671A2D5A5F00C4D474 /* SimpleStockApp */,
 				0705FD811A2D5A5F00C4D474 /* SimpleStockAppTests */,
 				0705FD661A2D5A5F00C4D474 /* Products */,
@@ -117,6 +122,16 @@
 				0705FD831A2D5A5F00C4D474 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07FB903B1A2D5BA700EA5340 /* SIOSocket */ = {
+			isa = PBXGroup;
+			children = (
+				07FB90371A2D5BA000EA5340 /* SIOSocket.h */,
+				07FB90381A2D5BA000EA5340 /* SIOSocket.m */,
+				07FB90391A2D5BA000EA5340 /* socket.io.js.h */,
+			);
+			name = SIOSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +236,7 @@
 			files = (
 				0705FD711A2D5A5F00C4D474 /* ViewController.m in Sources */,
 				0705FD6E1A2D5A5F00C4D474 /* AppDelegate.m in Sources */,
+				07FB903A1A2D5BA000EA5340 /* SIOSocket.m in Sources */,
 				0705FD6B1A2D5A5F00C4D474 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +428,7 @@
 				0705FD8A1A2D5A5F00C4D474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0705FD8B1A2D5A5F00C4D474 /* Build configuration list for PBXNativeTarget "SimpleStockAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				0705FD8D1A2D5A5F00C4D474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
