@@ -14,7 +14,9 @@
 		0705FD761A2D5A5F00C4D474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0705FD751A2D5A5F00C4D474 /* Images.xcassets */; };
 		0705FD791A2D5A5F00C4D474 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0705FD771A2D5A5F00C4D474 /* LaunchScreen.xib */; };
 		0705FD851A2D5A5F00C4D474 /* SimpleStockAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705FD841A2D5A5F00C4D474 /* SimpleStockAppTests.m */; };
+		079F16CB1A2D5D8400640AF3 /* StockAppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F16CA1A2D5D8400640AF3 /* StockAppTableViewCell.m */; };
 		07FB903A1A2D5BA000EA5340 /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB90381A2D5BA000EA5340 /* SIOSocket.m */; };
+		07FB903E1A2D5C0800EA5340 /* StockAppTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FB903D1A2D5C0800EA5340 /* StockAppTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +43,13 @@
 		0705FD7E1A2D5A5F00C4D474 /* SimpleStockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0705FD831A2D5A5F00C4D474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0705FD841A2D5A5F00C4D474 /* SimpleStockAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleStockAppTests.m; sourceTree = "<group>"; };
+		079F16C91A2D5D8400640AF3 /* StockAppTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockAppTableViewCell.h; path = SimpleStockApp/StockAppTableViewCell.h; sourceTree = "<group>"; };
+		079F16CA1A2D5D8400640AF3 /* StockAppTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockAppTableViewCell.m; path = SimpleStockApp/StockAppTableViewCell.m; sourceTree = "<group>"; };
 		07FB90371A2D5BA000EA5340 /* SIOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIOSocket.h; path = SIOSocket/SIOSocket.h; sourceTree = "<group>"; };
 		07FB90381A2D5BA000EA5340 /* SIOSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIOSocket.m; path = SIOSocket/SIOSocket.m; sourceTree = "<group>"; };
 		07FB90391A2D5BA000EA5340 /* socket.io.js.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socket.io.js.h; path = SIOSocket/socket.io.js.h; sourceTree = "<group>"; };
+		07FB903C1A2D5C0800EA5340 /* StockAppTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockAppTableView.h; path = SimpleStockApp/StockAppTableView.h; sourceTree = "<group>"; };
+		07FB903D1A2D5C0800EA5340 /* StockAppTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockAppTableView.m; path = SimpleStockApp/StockAppTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				07FB903B1A2D5BA700EA5340 /* SIOSocket */,
+				079F16CC1A2D5DA500640AF3 /* TableConfig */,
 				0705FD671A2D5A5F00C4D474 /* SimpleStockApp */,
 				0705FD811A2D5A5F00C4D474 /* SimpleStockAppTests */,
 				0705FD661A2D5A5F00C4D474 /* Products */,
@@ -122,6 +129,17 @@
 				0705FD831A2D5A5F00C4D474 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079F16CC1A2D5DA500640AF3 /* TableConfig */ = {
+			isa = PBXGroup;
+			children = (
+				07FB903C1A2D5C0800EA5340 /* StockAppTableView.h */,
+				07FB903D1A2D5C0800EA5340 /* StockAppTableView.m */,
+				079F16C91A2D5D8400640AF3 /* StockAppTableViewCell.h */,
+				079F16CA1A2D5D8400640AF3 /* StockAppTableViewCell.m */,
+			);
+			name = TableConfig;
 			sourceTree = "<group>";
 		};
 		07FB903B1A2D5BA700EA5340 /* SIOSocket */ = {
@@ -236,7 +254,9 @@
 			files = (
 				0705FD711A2D5A5F00C4D474 /* ViewController.m in Sources */,
 				0705FD6E1A2D5A5F00C4D474 /* AppDelegate.m in Sources */,
+				079F16CB1A2D5D8400640AF3 /* StockAppTableViewCell.m in Sources */,
 				07FB903A1A2D5BA000EA5340 /* SIOSocket.m in Sources */,
+				07FB903E1A2D5C0800EA5340 /* StockAppTableView.m in Sources */,
 				0705FD6B1A2D5A5F00C4D474 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
